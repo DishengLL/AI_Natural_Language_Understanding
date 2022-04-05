@@ -1,5 +1,7 @@
 # Assignment 4: Natural Language Understanding
 
+[go the github of this project](https://github.com/DishengLL/MSIS_4_Natural_Language_Understanding)
+
 This assignment focuses on natural language understanding. Assume a user, Lily, wants to decide whether or not to have an important dinner at [Union Grill](https://www.yelp.com/biz/union-grill-pittsburgh) on Craig Street. She wants to know the past consumers’ opinion on the restaurant. For example, does Union Grill provide good service? Does it have delicious food? Does it provide a good price for the food? You want to help her by mining Yelp, which contains 368 reviews about the restaurant. **Opinion** is an aspect of the restaurant in Yelp’s reviewer assessment.
 
  
