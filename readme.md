@@ -24,7 +24,7 @@ The extracted opinions from the reviews can be represented as a tuple with two e
 
  
 
-![img](file:////Users/liu/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image002.jpg)
+![img]("https://user-images.githubusercontent.com/39432361/161781501-ce1b14c7-7aee-4c67-a0f4-bd5f118874a8.png")
 
  
 
