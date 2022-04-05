@@ -25,7 +25,7 @@ The extracted opinions from the reviews can be represented as a tuple with two e
 **“The menu is large, the portions are even larger, and the prices are reasonable.”,** the system should extract three tuples **[menu, large], [portion, large], [price, reasonable],** and menu, portion and price are attributes, large, large and reasonable are values. Stanford coreNLP ([demo URL](http://corenlp.run/)) will provide parsing in the following figure, and maybe you want to extract nsubj(large, menu), nsubj(larger, portions) and amod(prices, reasonable). The examples we provide here are only some forms of opinions.You are strongly encouraged to read the reviews to design your own ways to extract opinions based on the coreNLP Enhanced Dependencies Annotation parsing results.
 
  
-<img width="800" alt="image" src="https://user-images.githubusercontent.com/39432361/161781695-7ffd0f10-ce6b-479a-9edd-9a01bbb42835.png">
+<img width="850" alt="image" src="https://user-images.githubusercontent.com/39432361/161781695-7ffd0f10-ce6b-479a-9edd-9a01bbb42835.png">
  
 
 Download CoreNLP tool: [Python](https://www.khalidalnajjar.com/setup-use-stanford-corenlp-server-python/).
