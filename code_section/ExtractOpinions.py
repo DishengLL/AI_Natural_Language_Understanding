@@ -23,8 +23,6 @@ class ExtractOpinions:
         #plain_text = re.sub(r'[^\w\s]', '', plain_text)
         # plain_text = plain_text.lower()
 
-
-
         return plain_text
 
     def extract_pairs(self, review_id, review_content):
@@ -34,14 +32,20 @@ class ExtractOpinions:
         # print(text)
 
         a = sNLP.dependency_parse(text)
-        text = text.split(' ')
+        print(a)
+
+        text = re.sub('([.,!?()])', r' \1 ', text)
+        text = re.sub('\s{2,}', ' ', text)
+        text = text.split(' ')[:-1]
+        print(text)
         for i, j, k in a:
             if i == 'ROOT':
                 continue
                 print('>>>>', text[k - 1], i)
             l = ['nsubj', 'amod']
             if i in l:
-                # print('\t>>>>', text[j - 1], text[k - 1], '-->', i)
+                print(j,k)
+                print('\t>>>>', text[j - 1], text[k - 1], '-->', i)
                 review_content = text[j - 1]+',  '+text[k - 1]
                 # print(j-1,k-1)
                 # print(review_content, i)
@@ -58,3 +62,25 @@ class ExtractOpinions:
 
 
         # self.extracted_opinions = {'service, good': [1, 2, 5], 'service, excellent': [4, 6]}
+
+step_1_extract_opinion = ExtractOpinions()
+review_id=1
+f = open('data//assign4_reviews.txt', 'r')
+
+c='The menu is large, the portions are even larger, and the prices are reasonable.'
+step_1_extract_opinion.extract_pairs(review_id, c)
+
+
+
+# for line in open('data//assign4_reviews.txt'):
+#     review_content = f.readline()
+#     step_1_extract_opinion.extract_pairs(review_id, review_content)
+#     review_id = review_id + 1
+# f.close()
+#
+# extracted_opinions = step_1_extract_opinion.extracted_opinions
+# for tmp_opinion in extracted_opinions:
+#     review_ids = extracted_opinions[tmp_opinion]
+#     print("\n[" + tmp_opinion + "] appears in review " + "\t" + " ".join(str(review_ids)))
+# print("\n--------------------------------------------------------------")
+#
