@@ -49,13 +49,14 @@ class StanfordNLP:
 
 if __name__ == '__main__':
     sNLP = StanfordNLP()
-    text = 'The menu is large, the portions are even larger, and the prices are reasonable.'
-    text = re.sub(r'[^\w\s]', '', text)
+    text = "Delicious old school bar/restaurant. Love the ornate woodwork and white tablecloths. Service was absolutely excellent. I had the pot roast with the red skinned mashed potatoes and cole slaw. The meat was so tender and flavorful, and the potatoes...yum! The Cole slaw was delicious too, and I'm VERY picky about Cole slaw."
+
+    # text = re.sub(r'[^\w\s]', '', text)
     print(text)
-    # print ("Annotate:", sNLP.annotate(text))
-    # print ("POS:", sNLP.pos(text))
-    # print ("Tokens:", sNLP.word_tokenize(text))
-    #print ("NER:", sNLP.ner(text))
-    # print ("Parse:", sNLP.parse(text))
+    print ("Annotate:", sNLP.annotate(text))
+    print ("POS:", sNLP.pos(text))
+    print ("Tokens:", sNLP.word_tokenize(text))
+    print ("NER:", sNLP.ner(text))
+    print ("Parse:", sNLP.parse(text))
     a = sNLP.dependency_parse(text)
-    # print ("Dep Parse:", sNLP.dependency_parse(text))
+    print ("Dep Parse:", sNLP.dependency_parse(text))
