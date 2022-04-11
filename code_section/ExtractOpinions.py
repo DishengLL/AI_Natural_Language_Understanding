@@ -32,7 +32,7 @@ class ExtractOpinions:
         # devide whole paragraph into sentences
         review_contents  = nltk.tokenize.sent_tokenize(review_contents )
         # print(review_contents)
-        l = ['nsubj', 'amod']
+        l = ['nsubj', 'amod','compound']
 
         for review_content in review_contents:
             # text =self.preprocessing(review_content)
@@ -74,8 +74,7 @@ class ExtractOpinions:
 if __name__ == "__main__":
     step_1_extract_opinion = ExtractOpinions()
     review_id=1
-    f = open('data//assign4_reviews.txt', 'r')
-
     c="Delicious old school bar/restaurant. Love the ornate woodwork and white tablecloths. Service was absolutely excellent. I had the pot roast with the red skinned mashed potatoes and cole slaw. The meat was so tender and flavorful, and the potatoes...yum! The Cole slaw was delicious too, and I'm VERY picky about Cole slaw."
     step_1_extract_opinion.extract_pairs(review_id, c)
+    print(step_1_extract_opinion.extracted_opinions)
 
