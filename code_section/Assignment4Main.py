@@ -12,13 +12,14 @@ for line in open('data//assign4_reviews.txt'):
 f.close()
 # output extracted opinions.
 extracted_opinions = step_1_extract_opinion.extracted_opinions
+
 for tmp_opinion in extracted_opinions:
     review_ids = extracted_opinions[tmp_opinion]
     print("\n[" + tmp_opinion + "] appears in review " + "\t" + " ".join(str(review_ids)))
 print("\n--------------------------------------------------------------")
 
 # Step 2: find similar extracted opinions
-cosine_sim = 0.8
+cosine_sim = 0.5
 step_2_find_similar_opinion = FindSimilarOpinions.FindSimilarOpinions(cosine_sim, extracted_opinions)
 opinions = ["service, good", "service, bad", "atmosphere, good", "food, delicious"]
 for query_opinion in opinions:
