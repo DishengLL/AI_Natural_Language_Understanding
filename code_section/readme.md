@@ -5,7 +5,7 @@ extract opinion pairs ---- like ``service, good ``.
 store all of review pairs into a `dict` --- {``service, good ``: [`reviewID_1`, `reviewID_2`, ... ]}
 
 ## FindSimilarOpinions.py
-use `cosin similiarity` to measure the similarity between input query opinion and the extracted review pairs from corpus.   
+use `cosine similiarity` to measure the similarity between input query opinion and the extracted review pairs from corpus.   
 if the similarity value is greater than the predefined threshold, then the corresponding reivews is relavent with the input one.
 
 **instance:**  
