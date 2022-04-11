@@ -52,7 +52,7 @@ class ExtractOpinions:
                 for i, j, k in a:
                     if i == 'ROOT':
                         continue
-                        print('>>>>', text[k - 1], i)
+                        # print('>>>>', text[k - 1], i)
 
                     if i in l:
                         # print(j,k)
