@@ -8,8 +8,8 @@ import gensim.models.keyedvectors as word2vec
 # embed_map.save_word2vec_format(path_to_word2vec_txt, binary=False)
 
 
-path_to_word2vec="D:\\Projects\\workspace-gsa\\AIclass\\data\\assign4_word2vec.txt"
-path_to_word2vec_txt="D:\\Projects\\workspace-gsa\\AIclass\\data\\assign4_word2vec.bin"
+path_to_word2vec="../assign4_word2vec.txt"
+path_to_word2vec_txt="../assign4_word2vec_for_python.bin"
 embed_map = word2vec.KeyedVectors.load_word2vec_format(path_to_word2vec_txt, binary=True)
 print(embed_map.similarity('great', 'good'))
 print(embed_map.similarity('great', 'in'))
