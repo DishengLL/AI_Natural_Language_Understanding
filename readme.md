@@ -43,7 +43,7 @@ Materials (but not limited to) to help you understand and use CoreNLP:
 
  
 
-## ** 2: Given query, find the similar extracted opinions.**
+## **2: Given query, find the similar extracted opinions.**
 
 User will input an opinion as the query, and your system compares it against the extracted opinions. For example, in your extracted opinions, there are “**excellent service**”, “**nice waiter**”, “**great service**”, and “**good service**”. When Lily inputs “**good service**”, your system should return all these extracted opinions since they are all the evidence supporting  __“good service”__. 
 
