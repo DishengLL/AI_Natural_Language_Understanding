@@ -18,7 +18,7 @@ Dataset: You are provided with 20 reviews randomly selected from Yelp of Union G
 
  
 
-## **Task 1: Extract opinions from reviews with CoreNLP tool.**
+## **1: Extract opinions from reviews with CoreNLP tool.**
 
 The extracted opinions from the reviews can be represented as a tuple with two elements: attribute and value. The attribute can be an aspect of the restaurant, i.e., an entity or a few entities of the restaurant. The value is a descriptive word that provides the assessment mentioned in the reviews. For example, three opinions are expressed in reviews 
 
@@ -43,7 +43,7 @@ Materials (but not limited to) to help you understand and use CoreNLP:
 
  
 
-## **Task 2: Given the input opinion as the query, find the similar extracted opinions.**
+## ** 2: Given query, find the similar extracted opinions.**
 
 User will input an opinion as the query, and your system compares it against the extracted opinions. For example, in your extracted opinions, there are “**excellent service**”, “**nice waiter**”, “**great service**”, and “**good service**”. When Lily inputs “**good service**”, your system should return all these extracted opinions since they are all the evidence supporting  __“good service”__. 
 
