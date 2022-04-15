@@ -1,4 +1,4 @@
-# Assignment 4: Natural Language Understanding
+# Natural Language Understanding
 
 This assignment focuses on natural language understanding. Assume a user, Lily, wants to decide whether or not to have an important dinner at [Union Grill](https://www.yelp.com/biz/union-grill-pittsburgh) on Craig Street. She wants to know the past consumers’ opinion on the restaurant. For example, does Union Grill provide good service? Does it have delicious food? Does it provide a good price for the food? You want to help her by mining Yelp, which contains 368 reviews about the restaurant. **Opinion** is an aspect of the restaurant in Yelp’s reviewer assessment.
 
@@ -168,60 +168,7 @@ If you are interested in mining deeper in this area, you may also find:
 
  
 
-**Coding:**
 
-Please install the package “[gensim](https://radimrehurek.com/gensim/models/word2vec.html)” for vector similarity calculation.
-
- 
-
-Please feel free to add extra python files, functions, attributes to do training, validation, and testing. Your grading will be based on the output of running Assignment4Main and the report.
-
-**Assignment4Main** is the main class for running your assignment, which **cannot** be modified. 
-
- 
-
- 
-
-**Report:**
-
-You need to clearly write:
-
-(1)  How did you design your opinion extraction module with CoreNLP?
-
-(2)  How did you measure the opinion similarity? How do you tune the threshold?
-
-(3)  Discuss the successful cases that your system can handle. 
-
-(4)  Discuss the cases that your system fail. For example, you may find the review shows an opinion similar to the input opinion, but your algorithm fail to extract. Or you may have a similar opinion, but cannot be matched to the input opinion through your current algorithm. 
-
-(5)  The output of your algorithm with your best results (threshold).
-
- 
-
- 
-
-**Grading:**
-
-Your submission will be graded based on:
-
-1. Correctness     of the implementation on two tasks (40%)
-2. Performance     of your algorithms. A good algorithms should provide expected review_ids,     as listed in **Assignment4Main**,     as many as possible. (20%)
-3. A     clear report in **PDF** format (40%)
-
- 
-
-## **Submission Requirements**
-
-A zipped file package with the naming convention as “pittids_a4”. For example, suppose the Pitt id is jud1, then the submission package should be jud1_a4.zip.
-
-The file package should contain:
-
-1. All the scripts/programs you used for this assignment.     (**src folder**)
-2. A clear report. (**pdf file**)
-3. Your output of Assignment4Main. (This should also be     included in the **pdf file**.)
-4. The tool you used in the assignment. (This should also     be included in the **pdf file**.)
-
-**Do not upload the stanford CoreNLP package file and the pre-trained word2vec.** 
 
  
 
