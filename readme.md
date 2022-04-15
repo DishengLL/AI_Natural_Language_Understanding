@@ -101,42 +101,8 @@ query opinion [**service, bad**] has similar opinions:
 [service, slow] appears in review 19 
 
 [waiter, slow] appears in review 15
-
  
 
-query opinion [**atmosphere, good**] has similar opinions: 
-
-[atmosphere, nice] appears in review 3, 4
-
-[atmosphere, great] appears in review 5
-
-[atmosphere, fun] appears in review 14
-
-[feeling, warm] appears in review 12
-
-[ambience, pleasant] appears in review 20
-
- 
-
-query opinion [**food, delicious**] has similar opinions: 
-
-[meal, delicious] appears in review 4
-
-[food, great] appears in review 5
-
-[food, excellent] appears in review 6
-
-[food, hearty] appears in review 8
-
-[food, excellent] appears in review 13 
-
-[food, fresh] appears in review 14
-
-[food, interesting] appears in review 14
-
-[food, satisfying] appears in review 16
-
-[food, fresh] appears in review 18
 
 If you are interested in mining deeper in this area, you may also find:
 
@@ -163,23 +129,3 @@ If you are interested in mining deeper in this area, you may also find:
 [food quality, excellent] appears in review 11
 
 [waffles fries, great] appears in review 17
-
- 
-
- 
-
-
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
